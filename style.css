@@ -1,0 +1,164 @@
+/* --view mobile-- */
+
+@media screen and (max-width: 480px) and (min-width: 100px){
+
+    body {
+        background-color: #FFF;
+    }
+
+    .title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.045em;
+        text-align: left;
+        margin: 10px;
+    }
+
+    .sub-title {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 10px;
+    }
+
+    .text {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        margin: 15px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+
+    }
+
+    .grid-item {
+        padding: 20px;
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .grid-item img {
+        width: 100%;
+        height: 200px;
+        box-shadow: -7px 10px 9px -1px rgba(0,0,0,0.56);
+    }
+
+    .grid-item:nth-child(even) {
+        margin-top: 60px;
+    }
+
+    .vertical-text {
+        position: absolute;
+        top: 20%;
+        right: 10px;
+        transform: rotate(90deg) translate(50%, -50%);
+        transform-origin: top right;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+
+
+}
+
+
+/* --view desktop-- */
+
+ @media screen and (min-width: 481px) and (max-width: 1600px) { 
+
+    body {
+        background-color: #FFF;
+    }
+
+    .header {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        width: 60%;
+        margin-left: 22%;
+        margin-top: 20px;
+    }
+
+    .header .text {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-column-end: 2;
+        width: 90%;
+    }
+
+    .title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 36px;
+        font-weight: 700; 
+    }
+
+    .sub-title {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .text {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .grid-item {
+        padding: 20px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 341px;
+        box-shadow: -7px 10px 9px -1px rgba(0,0,0,0.56);
+    }
+
+    .grid-item:nth-child(2) {
+        margin-top: 80px;
+    }
+
+    .grid-item:nth-child(5) {
+        margin-top: 80px;
+    }
+
+    .vertical-text {
+        position: absolute;
+        top: 15%;
+        right: 10px;
+        transform: rotate(90deg) translate(50%, -50%);
+        transform-origin: top right;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    .text-name {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+ }
